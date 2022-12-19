@@ -1,0 +1,22 @@
+
+<div class="modali">
+  <span [(ngModel)]="res">Resul: {{res}}</span>
+  <form action="">
+
+    <div class="inputsContainer">
+      <p> Numero 1: <input type="number" name="numero1" [(ngModel)]="number1" class="input"></p>
+      <p> Numero 2: <input type="number" name="numero2" [(ngModel)]="number2" class="input"></p>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn" (click)="sum()">+</button>
+      <button class="btn" (click)="rest()">-</button>
+      <button class="btn" (click)="mul()">x</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+

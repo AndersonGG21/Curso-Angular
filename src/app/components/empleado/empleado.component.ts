@@ -9,7 +9,7 @@ export class EmpleadoComponent implements OnInit{
   nombre= 'Maria'
   apellido = 'Garcia'
   private edad = 51
-  private empresa = 'EPM'
+  empresa = 'Google'
   enableInput = false
   message = 'No registrado'
 
@@ -32,6 +32,10 @@ export class EmpleadoComponent implements OnInit{
   checkBox(event:Event){
     // this.message == 'No registrado' ? this.message = 'Registrado 😁' : this.message = "No registrado"
     (<HTMLInputElement>event.target).value == 'si' ? this.message = 'Registrado 😁': this.message = "No registrado";
+  }
+
+  changeCompany(event:Event){
+    this.empresa = (<HTMLInputElement>event.target).value
   }
 
 

@@ -1,13 +1,13 @@
 <p>Nombre: {{ nombre }}</p>
 <p>Apellido: {{ apellido }}</p>
 <p>Edad: {{ getEdad() < 18 ? 'No es mayor de edad' : 'Es mayor de edad' }}</p>
-<p>Empresa: {{ inputEmpresa.value }}</p>
+<p>Empresa: {{ empresa }}</p>
 
 
-<span>Escribe el nombre de la Empresa: <input type="text" name="" id="" #inputEmpresa (keyup)="0" [disabled]="enableInput"></span>
+<!-- <span>Escribe el nombre de la Empresa: <input type="text" name="" id="" #inputEmpresa (keyup)="0" [disabled]="enableInput"></span> -->
+Escribe el nombre de la Empresa: <input type="text" [(ngModel)]="empresa">
 <br>
 
-<!-- <input type="checkbox" name="" id="" (click)="checkBox()"> -->
 <div class="inputs">
   Registrado: <input type="radio" value="si" name="radio" id="" (click)="checkBox($event)">
   <br>
